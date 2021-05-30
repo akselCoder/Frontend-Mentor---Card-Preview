@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/*Basic styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --green-color: hsl(179, 100%, 13%);
+    --light-gray: hsl(0, 0%, 95%);                      /*For headings and backgrounds*/
+    --transparent-white: hsla(0, 0%, 100%, 0.75);       /*For paragraphs*/
+
+    --primary-font-size: 15px;
+
+    --main-font-family: 'Lexend Deca', sans-serif;
+    --headings-font-family: 'Big Shoulders Display', sans-serif;
+}
+
+body {
+    font-size: var(--primary-font-size);                 /*Font-size: 15px*/
+    font-family: var(--main-font-family);                /*'Lexend Deca', sans-serif*/
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Headings and Paragraphs */
+h3 {
+    font-family: var(--headings-font-family);
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: var(--primary-font-size);
+    font-family: var(--main-font-family);                 /*Although this is redundant because it inherent by its parent*/      
+    line-height: 1.6;
+    /*margin-bottom: 100px 0; */
+}
+
+.container {
+    padding: 20px;
+}
+
+.box {
+   /*display: flex; */
+    padding: 40px;
+} 
+
+.box img {
+    margin-bottom: 30px;
+}
+
+.box p{
+    margin-bottom: 30px;
+}
+
+.box h3 {
+    margin-bottom: 20px;
+}
+ 
+/*Orange*/
+.box-1 {
+    background-color: var(--bright-orange);
+    color: var(--transparent-white);
+    border-radius: 10px 0 0 10px;
+}
+
+/*Dark Cyan*/
+.box-2 {
+    background-color: var(--dark-cyan);
+    color: var(--transparent-white);
+}
+
+/*Green*/
+.box-3 {
+    background-color: var(--green-color);
+    color: var(--transparent-white);
+    border-radius: 0 10px 10px 0;
+}
+
+.btn {
+    background-color: var(--light-gray);
+    border: 2px solid #fff;
+    border-radius: 30px;
+    margin-top: 50px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--light-gray);
+}
+
+/* Color text of each button*/
+.box-1 .btn {
+    color: var(--bright-orange);
+}
+.box-2 .btn {
+    color: var(--dark-cyan);
+}
+.box-3 .btn {
+    color: var(--green-color);
+}
+
+@media (min-width: 992px) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      max-width: 900px;
+      margin: auto;
+    }
+  
+    .bright-orange {
+      border-radius: 10px 0 0 10px;
+    }
+  
+    .very-dark-cyan {
+      border-radius: 0 10px 10px 0;
+    }
+  
+    .card {
+      padding: 45px;
+    }
+  
+    .card p {
+      margin-bottom: 80px;
+    }
+  }
+
+
