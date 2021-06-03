@@ -57,8 +57,9 @@ p {
 }
 
 .container {
-    width: 100%;
-    padding: 20px;
+    width: 80%;
+    margin-left: 10em;
+    padding: 7em;
     align-items: center;
     justify-content: center;
 }
@@ -67,7 +68,7 @@ p {
    /*display: flex; */
    width: 100%; 
    max-width: 100%;
-   padding: 40px;   
+   /*padding: 40px;   */
     
 } 
 
@@ -77,7 +78,7 @@ p {
 }
 
 .card p{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .card h3 {
